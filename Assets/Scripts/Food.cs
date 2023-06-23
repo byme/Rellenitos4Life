@@ -18,15 +18,16 @@ public class Food : MonoBehaviour
       void Start()
       {
         //StartCoroutine(foodSpawn());
-        InvokeRepeating("foodSpawn", 2,5.0f);
+        InvokeRepeating("foodSpawn", 0.5f,5.0f);
     }
 
       void foodSpawn() {
 
-         // while (true) {
+        // while (true) {
 
-              var rNumber = Random.Range(minTrans, maxTrans);
-              var position = new Vector2(transform.position.x, rNumber);
+        //  var rNumber = Random.Range(minTrans, maxTrans);
+        var rNumber = transform.position.y;
+        var position = new Vector2(transform.position.x, rNumber);
               GameObject foodObject = Instantiate(foodPrefabs[Random.Range(0, foodPrefabs.Length)]);
               foodObject.transform.position = position;
               

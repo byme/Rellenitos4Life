@@ -6,7 +6,7 @@ public class BadGuyMovement : MonoBehaviour
 {
     [SerializeField] public float movemeventSpeed = 5.0f;
     Rigidbody2D rb;
-    Transform target;
+    public Transform target;
     Vector2 moveDirection;
 
     private void Awake()
@@ -16,7 +16,7 @@ public class BadGuyMovement : MonoBehaviour
 
     private void Start()
     {
-        target = GameObject.Find("Square").transform;
+       // target = GameObject.Find("Square").transform;
 
     }
 
