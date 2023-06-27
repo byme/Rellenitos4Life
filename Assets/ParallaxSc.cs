@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ParallaxSc : MonoBehaviour
 {
-public  Transform [] backgrounds;
+    public  Transform [] backgrounds;
     private float[] paralaxScales;
     public float smoothing = 1f;
 
