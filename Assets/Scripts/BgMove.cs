@@ -18,7 +18,7 @@ public class BgMove : MonoBehaviour
 
     private void Update()
     {
-        offset = (playerRB.velocity.x * 0.1f) * velMov * Time.deltaTime;
+        offset = (playerRB.velocity.x * 0.22f) * velMov * Time.deltaTime;
         material.mainTextureOffset += offset;
     }
 }
