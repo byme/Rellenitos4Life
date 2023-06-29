@@ -26,4 +26,11 @@ public class LifeBar : MonoBehaviour
         actuaLife = Mathf.Min(actuaLife, maxlife);
         UpdateLifeBar();
     }
+
+    public void DecreaseLife(float amount)
+    {
+        actuaLife -= amount;
+        actuaLife = Mathf.Clamp(actuaLife, 0f, maxlife);
+        UpdateLifeBar();
+    }
 }
