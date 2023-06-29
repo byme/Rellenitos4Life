@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
+
+    public float pointsToAdd = 5f; // puntos a sumar
+    public LifeBar lifeBar; //referencia al script LifeBar 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             // Aqui va la configuracion de lo que se quiera programar una vez el  jugador colisione con el colectable
+            //Accede al componente LifeBar y aumenta los puntos 
+            lifeBar.IncreaseLife(pointsToAdd);
 
+            //Destruye objeto Colecionable 
             Destroy(gameObject);
 
 
