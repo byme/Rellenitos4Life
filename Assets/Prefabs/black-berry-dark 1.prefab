@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 585824589598128665}
   - component: {fileID: 6657027643845811114}
-  - component: {fileID: 3346239404514664947}
   - component: {fileID: 2713163878163919185}
   - component: {fileID: 1532631053367889282}
   - component: {fileID: 6659261756761687370}
@@ -88,27 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &3346239404514664947
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4006087517763106216}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!60 &2713163878163919185
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -265,7 +243,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  throwingForce: 400
+  throwingForce: 0.2
+  startMarker: {fileID: 0}
+  endMarker: {fileID: 0}
+  speed: 0.05
 --- !u!114 &6659261756761687370
 MonoBehaviour:
   m_ObjectHideFlags: 0

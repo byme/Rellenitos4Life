@@ -123,6 +123,93 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &304557851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 304557853}
+  - component: {fileID: 304557852}
+  m_Layer: 0
+  m_Name: A*
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &304557852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304557851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAACYn+t3VjYLXwIAABUFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzoUxDoGktxYI6YHAhHZy8UW21liDLHkkmc/hv3cl29h1T5bffr19u9KNcGkKSKzSK83ZWjEg3wfEncm3QWt8hzPdK7njV2h8vjizmXOi3ueTWq4QH7swo3Kwmic/5F445wDBUvJU6XzJ9jBXxhqEUyoMoEkr66IlQrcBOeNn+OpCLngKZ+50xdNrMLjjMQFpQXdcJ6PwuXZuXCvPUiaC5gUwR7sNCJvU49C7SWyo9ghGoaughOCm5kPspfD9ftKL65Zxir15AsHoBYEM+D6zLm83dJOmBmxNSdPLgmsUqcpJfqpKuZyaQ8XrSEXpqkwnnlKVc/2feTj25lSr/L0pOw5cCZvx5IAUE2psR9kuvGiZj706JyoONBbwlYH8UCutSsnQaHXpQksD4aL9fXQ2zyA5tHhFtQeWRSt30JuN6+Humz/PBc9jL+SkAnZCebH99EHjYH4hYb8bpk6BqGPxx8Bvuu8uUW1449pYNNVdSkcvVqV2rmTpNXPdlHautAQP16QLkFTYyxbT2P4Ee7ZO2Z7ljbrrUhevbc0t6IV4uPUPgp5pq06PYZlMndZgsk1pBZfQknaGD9RprqSsFqyrSRO2K3VKk07YvuTs39Uis8kknSUvs/gpDYNwGg/xMwmen9g0DeksfgXid49L7JOKbUW0lgenJtvkEveseUUGK00Lv+xM09OKX3PVkZzLVO0SDSA3VYYHcdBYBC8lWzKOAu3AWi79vMktIkIlB2DRI1HkO12eraZRmyUiBT8q65CIzP2zEREHP3Z5q+HI4eSKN8nu5P4XUEsDBBQAAAgIAACYn+sonzy4bAAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSuYlJmnmyhXmScZqRgZFZki6QMjEwNU4xSzNKNE+yTFWKBaovqSxI9UvMTYXoCUgsyUjLzEvJzEvXcy/KTHEHGa0UWwsAUEsBAi0AFAAACAgAAJif63dWNgtfAgAAFQUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJif6yifPLhsAAAAeAAAAAkAJAAAAAAAAAAAAAAArAIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABjAwAAAAA=
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames: []
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 10
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
+--- !u!4 &304557853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304557851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &536999520
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,7 +435,7 @@ GameObject:
   - component: {fileID: 858691637}
   - component: {fileID: 858691636}
   - component: {fileID: 858691635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}

@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointsToAdd: 5
   lifeBar: {fileID: 0}
+  prefab: {fileID: 7710981678915262477, guid: ee3d0d533d0ef44719a1756fa91a0056, type: 3}
 --- !u!61 &4768664187052597903
 BoxCollider2D:
   m_ObjectHideFlags: 0
