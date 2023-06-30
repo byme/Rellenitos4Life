@@ -385,6 +385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.8
   jumpForce: 4
+  lifeBar: {fileID: 256713393}
+  decreseRate: 3
 --- !u!95 &256713392
 Animator:
   serializedVersion: 5
@@ -419,7 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeBar: {fileID: 1804626466}
-  actuaLife: 0
+  actuaLife: 100
   maxlife: 100
 --- !u!1 &365843207
 GameObject:
@@ -1344,7 +1346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.80891, y: 0.066189766, z: -5}
+  m_LocalPosition: {x: -11.809336, y: 0.066188574, z: -5}
   m_LocalScale: {x: 0.09864763, y: 0.6378587, z: 0.5364815}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8818,7 +8820,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -9293,7 +9295,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888883916}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.837181, y: 0.0657233, z: -5}
+  m_LocalPosition: {x: -11.837536, y: 0.0657233, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
