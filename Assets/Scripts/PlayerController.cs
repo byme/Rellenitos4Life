@@ -9,8 +9,6 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 5.0f;
     public float jumpForce = 5.0f;
-    public LifeBar lifeBar; // referencia de la barra de vida 
-    public float decreseRate = 1f; // Velocidad en la que disminuye la barra de vida 
     private bool isRunning = false;
     private bool isJumping = false;
     private Rigidbody2D rb;
@@ -44,14 +42,8 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
 
         }
-
-        DecreaseLifeOverTime();
     }
 
-    void DecreaseLifeOverTime()
-    {
-        lifeBar.DecreaseLife(decreseRate * Time.deltaTime);
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
