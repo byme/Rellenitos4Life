@@ -120,6 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43cf59586077d3541b266cb4d6f84c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsToAdd: 5
+  lifeBar: {fileID: 0}
+  particlesEffect: {fileID: 7710981678915262477, guid: ee3d0d533d0ef44719a1756fa91a0056, type: 3}
 --- !u!61 &6241681527475815007
 BoxCollider2D:
   m_ObjectHideFlags: 0
