@@ -63,12 +63,15 @@ public class EnemyScript : MonoBehaviour
 
         CircleCollider2D collider = GetComponent<CircleCollider2D>();
 
-        //collider sensor
-         Vector3 startOffset = transform.position - new Vector3(0f, GetComponent<CircleCollider2D>().bounds.extents.y + jumpCheckOffset);
-
+        //collider sensor - second version of collide detection
+        Vector3 startOffset = transform.position - new Vector3(0f, collider.bounds.extents.y + jumpCheckOffset);
         isGrounded = Physics2D.Raycast(startOffset,-Vector3.up,0.05f);
 
-      //  RaycastHit2D isGrounded = Physics2D.BoxCast(collider.bounds.center, collider.bounds.size, 0, Vector2.down, 0.1f, LayerMask.NameToLayer("TileMap"));
+        //  RaycastHit2D isGrounded = Physics2D.BoxCast(collider.bounds.center, collider.bounds.size, 0, Vector2.down, 0.1f, LayerMask.NameToLayer("TileMap"));
+
+
+        //First version of raycast code
+        //isGrounded = Physics2D.Raycast(transform.position, -Vector3.up, collider.bounds.extents.y + jumpCheckOffset);
 
 
         //Direction calculation
@@ -77,7 +80,11 @@ public class EnemyScript : MonoBehaviour
 
         //Jump calculation
         if (jumpEnabled && isGrounded) {
-            rb.AddForce(Vector2.up * speed * jumpModifier);
+            if(direction.y > jumpNodeHeighRequirement)
+            {
+                rb.AddForce(Vector2.up * speed * jumpModifier);
+
+            }
         }
 
         //Generate movement
@@ -89,7 +96,7 @@ public class EnemyScript : MonoBehaviour
             currentWayPoint++;
         }
 
-        //Move enemy to -x and +x
+        //Move enemy to left and right x and -x
      /*   if (rb.velocity.x > 0.05f) {
             transform.localScale = new Vector3(-1f * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
