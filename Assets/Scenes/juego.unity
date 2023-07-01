@@ -11135,6 +11135,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 256713389}
+    - target: {fileID: 6802194315641003606, guid: 7c3bcff96d8dc41e0b3f3fa35f658cfb, type: 3}
+      propertyPath: jumpNodeHeighRequirement
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6802194315641003625, guid: 7c3bcff96d8dc41e0b3f3fa35f658cfb, type: 3}
       propertyPath: m_Name
       value: DonPacho
