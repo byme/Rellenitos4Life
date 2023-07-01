@@ -12,7 +12,7 @@ public class LifeBar : MonoBehaviour
 
    
     //Actualizar la barra de vida en función de la vida actual 
-    void UpdateLifeBar()
+   public void UpdateLifeBar()
     {
         lifeBar.fillAmount = actuaLife / maxlife;
     }
