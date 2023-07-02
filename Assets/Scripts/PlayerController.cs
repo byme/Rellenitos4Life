@@ -48,10 +48,14 @@ public class PlayerController : MonoBehaviour
         DecreaseLifeOverTime();
     }
 
+
+    //Decrease life base on time
     void DecreaseLifeOverTime()
     {
         lifeBar.DecreaseLife(decreseRate * Time.deltaTime);
     }
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
@@ -64,7 +68,7 @@ public class PlayerController : MonoBehaviour
             if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
             {
                 SceneManager.LoadScene(nextSceneIndex);
-                transform.position =  startPosition   ; // Restablece la posición del jugador al inicio del nuevo nivel
+                transform.position =  startPosition   ; // Restablece la posiciï¿½n del jugador al inicio del nuevo nivel
             }
 
            
@@ -86,7 +90,7 @@ public class PlayerController : MonoBehaviour
         
         if (scene.buildIndex > 0)
         {
-            startPosition = transform.position; // Actualiza la posición de inicio del jugador al cargar un nuevo nivel
+            startPosition = transform.position; // Actualiza la posiciï¿½n de inicio del jugador al cargar un nuevo nivel
             
             //Camara sigue al Player en cada nivel 
             CinemachineVirtualCamera[] virtualCameras = FindObjectsOfType<CinemachineVirtualCamera>();

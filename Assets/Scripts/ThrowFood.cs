@@ -11,8 +11,10 @@ public class ThrowFood : MonoBehaviour
 
     public float throwingForce = 0.5f;
 
-
     
+
+
+
 
     // Movement speed in units per second.
     public float speed = 1.0F;
@@ -54,6 +56,10 @@ public class ThrowFood : MonoBehaviour
 
         if (Mathf.Abs(transform.position.x - target.transform.position.x) < 0.20f)
         {
+            //lifeBar.DecreaseLife(10.0f * Time.deltaTime);
+            target.GetComponent<LifeBar>().DecreaseLife(10.0f);
+            Debug.Log("vida bajada");
+
             Destroy(gameObject);
         }
 
