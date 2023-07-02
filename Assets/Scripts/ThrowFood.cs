@@ -6,6 +6,9 @@ public class ThrowFood : MonoBehaviour
 {
 
     public GameObject target; // Target (player)
+
+    public GameObject badGuy;
+
     public float throwingForce = 0.5f;
 
 
@@ -23,6 +26,8 @@ public class ThrowFood : MonoBehaviour
     private void Start()
     {
         target = GameObject.Find("Player");
+
+        badGuy = GameObject.Find("DonPacho");
 
         // Keep a note of the time the movement started.
         startTime = Time.time;
@@ -51,5 +56,12 @@ public class ThrowFood : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (Mathf.Abs(badGuy.transform.position.x - transform.position.x ) > 2.0f)
+        {
+            Destroy(gameObject);
+        }
+
+
     }
 }
