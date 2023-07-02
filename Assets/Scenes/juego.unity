@@ -5952,7 +5952,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 3a53c198197a49f47bc2f50f715514a9, type: 2}
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -8963,7 +8963,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1768013365
 Transform:
   m_ObjectHideFlags: 0
@@ -10573,6 +10573,22 @@ PrefabInstance:
     - target: {fileID: 2256912622636712314, guid: e590440a8b20b0b41af0841a85f41b21, type: 3}
       propertyPath: jumpForce
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256912622636712315, guid: e590440a8b20b0b41af0841a85f41b21, type: 3}
+      propertyPath: m_Size.x
+      value: 0.16016422
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256912622636712315, guid: e590440a8b20b0b41af0841a85f41b21, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: c91b08d3925e2e748842705253861e46, type: 2}
+    - target: {fileID: 2256912622636712315, guid: e590440a8b20b0b41af0841a85f41b21, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.014848761
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256912622636712318, guid: e590440a8b20b0b41af0841a85f41b21, type: 3}
+      propertyPath: m_BodyType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2256912622636712318, guid: e590440a8b20b0b41af0841a85f41b21, type: 3}
       propertyPath: m_Material

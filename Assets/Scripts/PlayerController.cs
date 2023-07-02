@@ -56,7 +56,18 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isJumping = false;
+            //isJumping = false;
+            // Comprobar si el jugador está en contacto con el suelo debajo de él
+            ContactPoint2D[] contacts = new ContactPoint2D[1];
+            collision.GetContacts(contacts);
+            foreach (ContactPoint2D contact in contacts)
+            {
+                if (contact.normal.y > 0.7f)
+                {
+                    isJumping = false;
+                    break;
+                }
+            }
         }
         else if (collision.gameObject.CompareTag("Finish"))
         {       //Cambio de escena
