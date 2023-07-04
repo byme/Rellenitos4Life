@@ -10,12 +10,14 @@ public class PlayerController : MonoBehaviour
     public float speed = 5.0f;
     public float jumpForce = 5.0f;
     public LifeBar lifeBar; // referencia de la barra de vida 
-    public float decreseRate = 1f; // Velocidad en la que disminuye la barra de vida 
+    public float decreseRate = 1f; // Velocidad en la que disminuye la barra de vida
+    public Transform badGuy;
     private bool isRunning = false;
     private bool isJumping = false;
     private Rigidbody2D rb;
     private Vector2 startPosition; // almacena la posicion de inicio del jugador 
     private Cinemachine.CinemachineVirtualCamera cinemachineCamera;
+    
 
     private void Start()
     {
@@ -23,7 +25,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         startPosition = transform.position;
         DontDestroyOnLoad(gameObject);
-       
+
     }
 
     private void FixedUpdate()
@@ -100,6 +102,16 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+    }
+
+
+    //Method to check if badguy catch the fatty or if fatty lose all his points
+    private void Update()
+    {
+        if (Mathf.Abs(Mathf.Abs(badGuy.transform.position.x) - Mathf.Abs(transform.position.x)) <= 0.4f || lifeBar.actuaLife == 0)
+        {
+            SceneManager.LoadScene("LoseScreen");
+        }
     }
 }
 

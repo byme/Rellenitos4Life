@@ -10394,6 +10394,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &2033744527 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6802194315641003605, guid: 7c3bcff96d8dc41e0b3f3fa35f658cfb, type: 3}
+  m_PrefabInstance: {fileID: 6802194316032792628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2074315066
 GameObject:
   m_ObjectHideFlags: 0
@@ -10849,6 +10854,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4605338315469582815, guid: b337f2e18e99540f4ad6e7ef61ff7c73, type: 3}
+      propertyPath: badGuy
+      value: 
+      objectReference: {fileID: 2033744527}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b337f2e18e99540f4ad6e7ef61ff7c73, type: 3}
 --- !u!1001 &4768664188420431828
@@ -10982,7 +10991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6802194315641003605, guid: 7c3bcff96d8dc41e0b3f3fa35f658cfb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.082
+      value: -13.943
       objectReference: {fileID: 0}
     - target: {fileID: 6802194315641003605, guid: 7c3bcff96d8dc41e0b3f3fa35f658cfb, type: 3}
       propertyPath: m_LocalPosition.y
